@@ -10,7 +10,7 @@ RUN mvn -B -q -DskipTests dependency:go-offline
 
 # Copy project source
 COPY src ./src
-
+   
 # Build the JAR (skip tests for faster build)
 RUN mvn clean package -DskipTests
 
